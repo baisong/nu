@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "NuLeadership Text Humanizer",
+    "description": "Replaces derogatory terms around justice and incarceration with human versions.",
+    "version": "1.0",
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+    }]
+}
